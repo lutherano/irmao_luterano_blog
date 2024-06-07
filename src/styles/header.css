@@ -1,0 +1,112 @@
+/* CSS referente aos botões de navegação */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100%;
+    position: relative;
+    background-color: var(--color-dark);
+    z-index: 1;
+}
+
+.logo-content {
+    display: flex;
+    max-height: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+    transform: translate(0, calc(50% - 20px)); /* Descontar o padding para um efeito melhor */
+}
+#logo {
+    max-height: 10vh; /* Precisei setar para funcionar, por que não 100%? */
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--color-dark);
+}
+#title {
+    color: var(--color-white);
+    font-size: x-large;
+}
+/* ===== Nav ===== */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    /* width: 100%; */
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+nav li {
+    transition: all 350ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    font-size: large;
+    height: 100%;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+nav li:hover {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}
+
+nav li:hover a {
+    color: var(--color-dark);
+}
+
+nav li a{
+    color: var(--color-white);
+}
+
+/* ===== Final Nav ======= */
+
+#intro {
+    font-size: medium;
+    position: absolute;
+    color: var(--color-white);
+    background-color: var(--color-dark);
+    width: 50%;
+    padding: var(--padding-2);
+    padding-top: 100px;
+    border-radius: var(--border-radius-2);
+    left: 2%;
+    transform: translate(0, -100%);
+}
+.desce {
+    animation: desce 1.5s forwards;
+}
+.sobe{
+    animation: sobe 1.5s forwards;
+}
+@keyframes desce {
+    from  {
+        transform: translate(0, -100%);
+    }
+    to {
+        transform: translate(0, -10%);
+    }
+}
+@keyframes sobe {
+    from  {
+        transform: translate(0, -10%);
+    }
+    to {
+        transform: translate(0, -100%);
+    }
+}
+/* ======= Final Intro */

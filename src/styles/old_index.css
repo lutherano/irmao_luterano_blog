@@ -1,0 +1,12 @@
+main {
+    height: 85vh;
+}
+
+footer {
+    height: 5vh;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+}
+

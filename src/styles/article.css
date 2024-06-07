@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+#page-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #022350;
+    height: 50vh;
+    position: relative;
+}
+#page-header nav {
+    position: absolute;
+    right: 15%;
+    top: 0;
+    display: flex;
+    width: 25vw;
+    height: calc(25vw * 25%);
+    max-height: calc(25vw / 4);
+    z-index: 2;
+}
+#page-header nav a {
+    transition: all 300ms ease;
+    opacity: 80%;
+    cursor: pointer;
+    width: 25%;
+    min-height: fit-content;
+    max-height: calc((25vw / 4) - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #01C6F7;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+#page-header nav a:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    opacity: 100%;
+}
+#page-header nav a img {
+    object-fit: contain;
+    max-width: 90%;
+}
+#page-header nav #home {
+    background-color: #065BCD;
+}
+#page-header nav #recomendacao {
+    background-color: #004AAD;
+}
+#page-header nav #artigos {
+    background-color: #013172;
+}
+#page-header nav #posts {
+    background-color: #022350;
+}
+#page-header section {
+    top: 0;
+    width: 65%;
+    padding: 2%;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image {
+    filter: blur(2.5px);
+    position: absolute;
+    width: calc(100% + 10px);
+    object-fit: cover;
+    top: -5px;
+    left: -5px;
+}
+
+#page-header section .logo {
+    position: absolute;
+    z-index: 1;
+    /* max-width: 20%; */
+    height: 15%;
+    top: 10%;
+    left: 2%;
+    font-family: "Open Sans";
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+
+    gap: 1%;
+    font-variant-caps: all-petite-caps;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/* ===== Logo ===== */
+.logo img {
+    max-width: 10%;
+    object-fit: scale-down;
+}
+
+.logo a {
+    font-size: x-large;
+    color: #fff;
+}
+
+#dados{
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: x-large;
+}
+
+#dados {
+ width: 100%;
+ height: 100%;   
+}
+#dados h1 {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+}
+#autor-adaptation {
+    width: 400px;
+    position: absolute;
+    height: 150px;
+    bottom: 0;
+    right: 0;
+}
+
+#autor-adaptation img {
+    position: absolute;
+    z-index: 0;
+    width: 400px;
+    height: 150px;
+}
+#autor-adaptation #autor-adaptador {
+    width: 100%;
+    font-size: large;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#autor-adaptador p{
+    margin-left: 15%;
+}
+
+main {
+    width: fit-content;
+    height: fit-content;
+    background-color: #022350;
+    display: flex;
+    justify-content: center;
+
+}
+
+article {
+    width: 65%;
+    padding: 2%;
+    background-color: #fff;
+    text-indent: 2.5rem;
+    font-size: large;
+    border-radius: 0 0 1rem 1rem;
+    margin-bottom: 1rem;
+}
+
+article h2 {
+    margin-bottom: 1%;
+}
+article p {
+    margin-bottom: 1%;
+}
+article footer {
+    text-indent: 0;
+}
