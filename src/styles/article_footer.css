@@ -134,9 +134,36 @@
 
 #creditos p:last-child {
     width: 30%;
-    text-align: end;
+    /* text-align: end; */
 }
 #creditos p:last-child a {
     color: #fff;
 }
 /* ========== Footer ========== */
+@media only screen and (max-width: 600px) {
+    #compromisso div {
+        width: calc(100% - 2rem);
+        text-align: center;
+    }
+    #compromisso img {
+        width: 50%;
+    }
+    #page-footer #contact-title {
+        width: 90%;
+        text-align: center;
+    }
+    .interaction {
+        display: none;
+    }
+    #page-footer #creditos {
+        height: 10%;
+        padding: 2%;
+        width: 96%;
+    }
+    #page-footer #creditos #logo {
+        display: none;
+    }
+    #page-footer #creditos p{
+        width: 90%;
+    }
+}
