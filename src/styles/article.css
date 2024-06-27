@@ -11,12 +11,13 @@
 
 #page-header nav {
     position: absolute;
-    right: 15%;
+    right: calc(15% + 5px);
     top: 0;
     display: flex;
     width: fit-content;
     height: fit-content;
     /* max-height: calc(25vw / 4); */
+    height: 15%;
     z-index: 2;
 }
 
@@ -33,6 +34,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     padding: 10px;
+    font-size: large;
 }
 
 #page-header nav a:hover {
@@ -142,7 +144,7 @@ main {
     position: relative;
 }
 
-main #mandamentos {
+main #container {
     width: 65%;
     padding: 2%;
     background-color: #fff;
@@ -188,7 +190,7 @@ audio {
         width: calc(100% - 4%);
         padding: 2%;
     }
-    main #mandamentos {
+    main #container {
         width: calc(100% - 4%);
         padding: 2%;
     }
@@ -196,6 +198,9 @@ audio {
         right: 50%;
         transform: translate(50%);
         height: 15%;
+    }
+    #page-header nav a{
+        font-size: larger;
     }
     .background-image {
         height: calc(100% + 10px);
